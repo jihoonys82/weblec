@@ -721,3 +721,6 @@ Caused by: java.io.FileNotFoundException: C:\Program Files\Git\mingw64\share\git
 	at java.io.FileInputStream.<init>(Unknown Source)
 	at org.eclipse.swt.graphics.ImageLoader.load(ImageLoader.java:178)
 	... 47 more
+
+!ENTRY org.eclipse.equinox.security 1 0 2018-07-24 20:21:36.483
+!MESSAGE New keyring password generated. 
