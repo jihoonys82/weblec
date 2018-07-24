@@ -1,0 +1,12 @@
+<!DOCTYPE html> <!-- html comment -->
+<html>
+<head>
+<meta charset="UTF-8"> <!-- 이 문서를 해석할때 utf-8 사용하라 -->
+<title>Hello!</title>
+</head>
+<body>
+<!-- control + shift + c -->
+<h1>URL folder structure practice</h1>
+
+</body>
+</html>

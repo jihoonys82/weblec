@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css"> /* stylesheet, CSS */
+table { /* Table outside square */
+	border: 1px solid #ccc;
+}
+
+td { /* each table data cell */
+	border: 1px solid #ABC;
+ }
+ 
+</style>
+
+</head>
+<body>
+
+<div>
+	<h1>table, table tag</h1>
+	<hr>
+	
+	<table>
+		<tr> <!-- table row -->
+			<td>Hello</td> <!-- table data -->
+			<td>this is table.</td>
+			<td>it is table.</td>
+		</tr>
+		
+		
+		
+	</table>
+	
+
+
+</div>
+</body>
+</html>

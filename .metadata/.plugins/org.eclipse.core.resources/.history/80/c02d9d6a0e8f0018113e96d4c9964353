@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css"> /* stylesheet, CSS */
+</style>
+
+</head>
+<body>
+
+<div>
+
+<form action="#" method="get">
+	<fieldset style="width: 220px">
+		<!-- 전송할 데이터 작성 -->
+		이름: <input type="text" name="name" /><br>
+		나이: <input type="text" name="age" /><br><br>
+		
+		<input type="submit" value="전송" />
+	</fieldset>
+</form>
+
+</div>
+
+</body>
+</html>

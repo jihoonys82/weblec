@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css"> /* stylesheet, CSS */
+table { /* Table outside square */
+	border: 1px solid #ccc;
+	
+	/* 테두리 겹치는 부분을 하나로 */
+	border-collapse: collapse;
+}
+
+th, td { /* each table data cell */
+	border: 1px solid #00C;
+ }
+ 
+</style>
+
+</head>
+<body>
+
+<div>
+	<h1>table, table tag</h1>
+	<hr>
+	
+	<table>
+		<thead> <!-- 제목 -->
+			<tr>
+				<th>Name</th>
+				<th>Address</th>
+				<th>Phone</th>
+			</tr>
+		</thead>
+		<tbody> <!-- 내용 -->
+			<tr>
+				<td>Alice</td>
+				<td>Seoul</td>
+				<td>12341234</td>
+			</tr>
+			<tr>
+				<td>Bob</td>
+				<td>Inchun</td>
+				<td>43214321</td>
+				
+			</tr>
+		</tbody>
+		<tfoot> <!-- 바닥글  -->
+			<tr>
+				<th>NAME</th>
+				<th>ADDR</th>
+				<th>PHONE</th>
+			</tr>
+		</tfoot>
+		
+	</table>
+	
+
+
+</div>
+</body>
+</html>
