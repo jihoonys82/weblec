@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+/* div에 마우스 올리면 선택되어서 반응함 */
+div:hover { color: red; }
+
+/* span 클릭하면 적용됨 */
+span:active { color: oragne; font-size: 40px;}
+span:hover { background-color: green; }
+
+input[type="button"]:active { color: blue; }
+
+a:visited {color: gray; }
+a:link { color: red; }
+
+:checked {
+	width: 50px;
+	height: 50px;
+}
+</style>
+</head>
+<body>
+<div>
+
+	<span>inside span tag </span> outside span tag <br>
+	<input type="button" value="확인" /> <br>
+	
+	<a href="http://naver.com">링크</a>
+	<a href="http://daum.net">링크2</a>
+	<a href="http://daum.net">링크3</a>
+	
+	<label>
+		<input type="checkbox" />확인
+	</label>
+
+</div>
+</body>
+</html>

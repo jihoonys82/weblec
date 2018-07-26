@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#one { color: blue; }
+#two { color: gray; }
+#three { border: 1px solid red; }
+</style>
+</head>
+<body>
+	<p id="one">p tag </p>
+	<span id="two">span tag</span>
+	<div id="three">div tag
+		<!-- NEVER DO THIS! ID has to be unique, it works but could have problems -->
+		<p id="three">p tag in div tag</p>
+	</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+* { /* 모든 요소 선택자 */
+ 	margin: 0; /* 0을넣으면 스타일을 없앤다. 보통은 단위를 꼭 써야함*/
+ 	padding: 0; 
+}
+
+p { /* tag 선택자 */
+	padding: 10px;
+	margin: 10px;
+	background-color: yellow;
+	color: green;
+}
+span {
+	/* inline 요소는 상하마진이 적용되지 않는다. */
+	margin: 20px;
+	/* same as : margin: 0 20px; */
+}
+div {
+	margin: 5px 20px 30px;
+	border: 3px dotted black;
+	padding: 20px;
+	background: red; /* content, border, padding */
+}
+
+</style>
+</head>
+<body>
+	<p>p tag </p>
+	<span>span tag</span>
+	<div>div tag
+		<p>p tag in div tag</p>
+	</div>
+</body>
+</html>

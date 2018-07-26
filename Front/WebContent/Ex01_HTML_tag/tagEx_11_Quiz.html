@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+label {
+display:inline-block;
+width : 90px;
+
+}
+
+textarea{
+	vertical-align: top;
+	resize: none;
+}
+
+fieldset { 
+	width: 300px;
+}
+
+#userId {
+	color: red;
+}
+
+</style>
+</head>
+<body>
+
+<div>
+	<form action="#" method="get">
+	<fieldset>
+		<legend>인적사항</legend>
+		<label for="userId"><span>아이디</span></label>
+		<input type="text" id="userId" name="userId" placeholder="아이디입력" />
+		<br>
+		<label for="password">비밀번호</label>
+		<input type="password" id="password" name="password" />
+		<br>
+		<label for="email">이메일</label>
+		<input type="email" id="email" name="email" />
+		<br>
+		<label>성별</label>
+		<label><input type="radio" name="gender" value="m" checked="checked">남</label>
+		<label><input type="radio" name="gender" value="f">여</label>
+		<br>
+		<label for="married">결혼여부</label>
+		<input type="checkbox" id="married" name="married" />
+		<br>
+		<label for="location">지역</label>
+		<select name="location" id="location">
+			<option value="seoul">서울</option>
+			<option value="two">경기도</option>
+			<option value="three">전라도</option>
+			<option value="three">경상도</option>
+		</select>
+		<br>
+		<label for="comment">하고싶은말</label>
+		<textarea rows="3" cols="20" name="comment" placeholder="입력하세요."></textarea>
+		<br> 
+		<label hidden="hidden"></label>
+		<input type="submit" value="제출" />
+		<input type="reset" value="취소" />
+	</fieldset>
+	</form>
+
+</div>
+
+</body>
+</html>
