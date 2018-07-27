@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+div { 
+	border: 1px solid black;
+	width: 100px; 
+	height: 100px;
+	padding: 10px;
+	margin: 10px; 
+	
+	/* display: block 일때는 마진은 주변 다른 요소의 마진 공간과 겹치도록 배치된다. */
+	/* display: inline 일 때는 width, height 안먹힘, 마진도 좌우로만 먹힘 */
+	/* display가 달라지면 요소의 크기를 결정하는 속성들의 적용 방법도 달라진다. */
+	display: inline;
+}
+
+</style>
+</head>
+<body>
+
+<div>하나</div>
+<div>둘</div>
+<div>셋</div><div>넷</div><div>다섯</div>
+
+</body>
+</html>
