@@ -25,6 +25,14 @@
 .relative {
 	position: relative;
 	left: 50px;
+	top: -50px;
+}
+
+.fixed{
+ 	position: fixed; 
+ 	z-index: 10;
+ 	top: 0px;
+ 	right: 0px;
 }
 
 #a1 {
@@ -61,6 +69,8 @@
 	<div id="a2" class="box absolute">절대위치 박스</div>
 	
 	<div class="box relative">상대위치 박스</div>
+	
+	<div class="box fixed">고정위치 박스</div>
 
 </body>
 </html>

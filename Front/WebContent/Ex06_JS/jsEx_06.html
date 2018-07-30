@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+var data;
+console.log(data);
+// console.log(da); // Error!
+
+//undefined 은 data type이 undefined
+//null 은 datatype이 Object
+if(data == undefined) { // undefined == undefined 
+	console.log("변수가 초기화되지 않음");
+}
+if(data === null) { // undefined == null but, undefined === null은 아님
+	console.log("===으로 비교하기");
+}
+
+console.log("---------");
+data= null;
+console.log(data);
+
+console.log("---------");
+console.log(typeof(data));
+console.log(typeof(undefined));
+
+data = true; 
+console.log(typeof(data));
+
+data = []; 
+console.log(typeof(data));
+
+data = {}; 
+console.log(typeof(data));
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
