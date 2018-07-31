@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+// Callback function 
+// 직접 호출해서 동착하는 함수가 아닌
+// 외부의 동작에서 실행되는 함수  (<--> call function)
+
+// Observer Pattern : 특정상황이 발생하면 준비된 매서드 중에 맞는 것을 찾아 제공 - Event Driven
+
+// 연산로직
+function add(n1, n2, callback) {
+	var res = n1+ n2; // 연산
+	
+	callback(res); //연산결과처리
+}
+
+// 결과 처리 로직1
+function print(result) {
+	console.log("결과값: " + result);
+}
+
+// 결과 처리 로직2
+function alertRes(result) {
+	alert("결과값: " + result); 
+}
+
+add(10,20, print);
+add(20,30, alertRes);
+
+add(40,50, function(res) {
+	document.write("결과값: " + res);
+});
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

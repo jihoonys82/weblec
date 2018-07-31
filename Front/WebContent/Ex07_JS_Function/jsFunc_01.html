@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+// // JS function
+// function 함수이름(매개변수1, 매개변수2, ...) {
+// 	//실행코드
+	
+// 	return 반환값;
+// }
+// // 함수 호출 
+// 함수이름(전달인자1, 전달인자2, ... );
+
+function hello() {
+	console.log("HELLO");
+}
+var f = hello; // 함수저장
+var res =hello(); // 리턴 저장
+
+console.log(f); //함수
+console.log(res); // undefined
+
+console.log("==========");
+var func = function(data1, data2) {
+	console.log(data1 + ":" + data2);
+	return 123;
+}
+
+var result = func(11, "Alice");
+console.log("함수처리결과 : "+ result);
+
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

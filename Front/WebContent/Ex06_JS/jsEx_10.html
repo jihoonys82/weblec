@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+// JS 제어문 - for in 배고 자바랑 같음 
+if(true) {
+	console.log("출력");
+}
+for(var i=0;i<3;i++) {
+	console.log("Hello");
+}
+console.log("---for in loop---");
+// for (var data in arr) {}
+
+var arr1=[10,20,30,40,50];
+for(var i in arr1) {
+	console.log(i);
+	console.log(arr1[i]);
+}
+console.log("--------");
+console.log(arr1["3"]);
+
+
+console.log("--------");
+var arr2 = ["Apple", "Banana", "Cherry"];
+
+arr2[10] = "Durian";
+
+console.log(arr2);
+console.log("--------");
+for(var i in arr2){
+	console.log(arr2[i]);
+}
+
+console.log("----일반 for loop----");
+for(var i=0;i<arr2.length;i++){
+// 	if(arr2[i] != undefined) {
+	if(arr2[i] != null) { // null 로 비교해도 잘 동작함
+		console.log(arr2[i]);		
+	}
+}
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

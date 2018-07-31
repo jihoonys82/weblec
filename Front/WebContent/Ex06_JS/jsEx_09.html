@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+// 강제 형변환
+var n1="123";
+var n2 = "34.56789";
+
+console.log(n1 = Number(n1));
+console.log(n2 = Number(n2));
+
+console.log("-----");
+
+console.log(n1.toString());
+console.log(n1.toString(2)); // binary
+console.log(n1.toString(8)); // 8진수
+console.log(n1.toString(16)); // 16진수
+
+console.log("-----");
+
+console.log(n2.toString());
+console.log(n2.toString(2)); // binary
+console.log(n2.toString(8)); // 8진수
+console.log(n2.toString(16)); // 16진수
+
+console.log("--toFixed--"); // 자리수 고정
+console.log(n1.toFixed(2));
+console.log(n2.toFixed(3));
+
+console.log(Number(n2.toFixed(2)));
+
+console.log("-- Function --");
+//함수 정의 코드 
+function func() {
+	console.log("this is a function");
+}
+
+var func2 = function() {
+	console.log("this is also a function.")
+}
+
+func(); //함수 호출
+func2();
+
+console.log("-----");
+console.log(func);
+console.log(func2);
+
+console.log("-----");
+console.log(typeof(func));
+console.log(typeof(func2));
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
