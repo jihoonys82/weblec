@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+window.onload = function() {
+	var form = document.getElementById("myForm");
+	var input1 = document.getElementsByName("data1");
+// 	var input1 = document.getElementsByName("data1")[0];
+	console.log(input1);
+	
+	form.removeChild(input1[0]);
+	
+// 	form.submit();
+	
+	test.style.color = "red";
+	
+	// id를 이용한 form 요소 선택
+	// form 요소노드의 input 자식노드를 name을 이용해 선택
+	// input 요소노드의 value 속성을 AAA로 적용 
+	myForm.data2.value="AAA";
+	myForm.submit();
+};
+
+</script>
+
+</head>
+<body>
+
+<h1 id="test"> form test</h1>
+
+<form id="myForm" action="#" method="get">
+	<input type="text" name="data1" />
+	<input type="text" name="data2" />
+</form>
+
+</body>
+</html>

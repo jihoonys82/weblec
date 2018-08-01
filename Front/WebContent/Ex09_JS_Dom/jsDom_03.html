@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+// 아래처럼 쓰면 document 로드 전에 실행 되기 때문에 반영이 제대로 안됨
+// windows.onload = function() {} 에 넣어야함
+// var h = document.getElementById("header");
+// console.log(h); // DOM 객체 h 출력
+// h.style.color = "red";
+</script>
+
+</head>
+<body>
+
+<h1 id="header">HEADER TEXT</h1>
+
+<script type="text/javascript">
+// body tag 가장 하단에 넣으면 사용 가능
+// DOM 객체가 왼성된 이후에 자바스크립트 코드가 동작하기 떄문
+var h = document.getElementById("header");
+console.log(h); // DOM 객체 h 출력
+h.style.color = "red";
+</script>
+</body>
+</html>

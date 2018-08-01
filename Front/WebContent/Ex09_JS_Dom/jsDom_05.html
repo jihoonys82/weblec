@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+
+window.onload = function() {
+	var img = document.createElement("img");
+	// img tag attributes - src, width, height, alt, title
+	img.src = "no-avatar.jpg";
+	img.width = "150"; // 기본단위가 이미 px로 지정되어 있음
+	img.setAttribute("height", "150px");
+	
+	img.setAttribute("myAttr", "Apple"); // 비표준 속성
+	console.log(img.getAttribute("myAttr"));
+	
+	var body = document.body;
+	body.appendChild(img);
+	
+
+};
+
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

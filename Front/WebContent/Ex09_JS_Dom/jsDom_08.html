@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+//content 안에 innerHTML 을 이용하여 아래 내용 추가 
+
+// ul 목록을 추가 
+//  - Javascript
+//	- DOM
+//	- innerHTML
+window.onload = function() {
+// 	var content = document.getElementById("content");
+// 	content.innerHTML = 
+// 		"<ul>"
+// 		+"	<li>Javascript</li>"
+// 		+"	<li>DOM</li>"
+// 		+"	<li>innerHTML</li>"
+// 		+"</ul>";
+	var div = document.getElementById("content");
+	div.innerHTML = "<ul id='u'></ul>";
+	
+	var u = document.getElementById("u");
+	u.innerHTML = "<li>Javascript</li>";
+	u.innerHTML += "<li>DOM</li>";
+	u.innerHTML += "<li>innerHTML</li>";
+
+}
+</script>
+
+</head>
+<body>
+
+<div id="content"></div>
+
+</body>
+</html>

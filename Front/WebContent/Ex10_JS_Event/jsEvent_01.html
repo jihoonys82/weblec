@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function hello() {
+	alert("이벤트리스너의 코드 길이가 길어지면! \n함수를 아예 따로 작성해서 호출되게끔 만들어야함!!!!!!!!!!");
+}
+</script>
+</head>
+<body>
+
+<div onclick="alert('HI');"> HAHAHAHA </div>
+<div onclick="function hi(){alert('Hi3');} hi();">HOHOHO</div>
+<div onclick="(function hi(){alert('Hi5');})();">HOHOHO</div>
+
+<div onclick="hello();">HAHOHAHO</div>
+</body>
+</html>
