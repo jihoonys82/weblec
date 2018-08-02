@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+.msg {
+	position: absolute;
+	left:80px;
+	color:red;
+}
+</style>
+
+<script type="text/javascript">
+
+</script>
+</head>
+<body>
+
+<form action="#" method="get" id="f">
+	<label for="userId">아이디</label>
+	<input type="text" id="userId" name="userId" /> <br>
+	
+	<div id="warnMsg"></div>
+	
+	<input type="button" id="btn" value="Button" />
+</form>
+
+<script type="text/javascript">
+// form validation
+// 유효한 값을 입력했는지 체크
+// 유효하지 않으면 form을 submit 하지 않음
+
+var minLen = 4;  // id 최소길이
+var maxLen = 10; // id 최대길이
+
+var valid = false;
+
+// id가 userId인 <input>테그에서 focus를 잃었을 경우
+// 발생하는 이벤트인 blur를 이용하여 처리하기
+userId.addEventListener("blur", function(){
+// 	console.log("userId : onblur 발생");
+	validation();
+
+});
+
+function validation() {
+	//validate code 작성
+	if(userId.value == "") {
+		warnMsg.innerHTML="";
+		warnMsg.style.display ="none"; // div를 안보이도록 설정
+		
+		valid = false;
+		
+		return;
+	} 
+	
+	if(userId.value.length < minLen || userId.value.length > maxLen) {
+		warnMsg.innerHTML = "아이디는 " + minLen + "~" + maxLen + "자 로 입력하세요.";
+		warnMsg.setAttribute("class", "msg");
+		warnMsg.style.display ="block"; // div를 보이도록
+		
+		valid = false; 
+		
+	} else {
+		warnMsg.innerHTML="";
+		warnMsg.style.display ="none"; // div를 안보이도록 설정
+		
+		valid = true;
+	}
+};
+
+btn.addEventListener("click", function() {
+	if(valid) {
+		f.submit();		
+	}
+	// method 2. validation()에 valid 를 리턴값으로 갖는다. 
+// 	if(validation()) {
+// 		f.submit();
+// 	}
+});
+</script>
+</body>
+</html>
