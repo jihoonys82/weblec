@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#sliderbox{
+	margin: 0 auto;
+	position: relative;
+	width: 300px;
+	height: 200px;
+	border: 1px solid black;
+  	overflow: hidden;  
+}
+#slider {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#slider li {
+	position: absolute;
+}
+
+#slider li img {
+	width: 300px;
+	height: 200px;
+}
+</style>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	var $slider_list = $("#slider li");
+	
+	// 모든 이미지를 left: 300px 로 숨기기
+	$slider_list.each(function() {
+		$(this).css("left", "300px");
+	});
+	$("#slider li:first-child").css("left", 0);
+	
+	// 클릭이 될 때마다 이미지를 한장씩 슬라이드
+	var curSlide = 0;
+	$("#sliderbox").on("click", function() {
+		var nextSlide = (curSlide+1) % $slider_list.length;
+		
+// 		$slider_list.eq(curSlide).css("left", "300px");
+// 		$slider_list.eq(nextSlide).css("left", 0);
+		
+		$slider_list.eq(nextSlide).css("left", "300px");
+		$slider_list.eq(curSlide).animate({"left": "-=300px"});
+		$slider_list.eq(nextSlide).animate({"left": "-=300px"});
+		
+		curSlide++;
+		curSlide = curSlide % $slider_list.length;
+// 		if(curSlide==5) {
+// 			curSlide=0;
+// 			$("#slider li:first-child").css("left", 0);
+// 		} 
+	});
+});
+</script>
+</head>
+<body>
+
+<div id="sliderbox">
+	<ul id="slider">
+		<li><img src="http://via.placeholder.com/300x200?text=image1" /></li>
+		<li><img src="http://via.placeholder.com/300x200?text=image2" /></li>
+		<li><img src="http://via.placeholder.com/300x200?text=image3" /></li>
+		<li><img src="http://via.placeholder.com/300x200?text=image4" /></li>
+		<li><img src="http://via.placeholder.com/300x200?text=image5" /></li>
+	</ul>
+</div>
+</body>
+</html>
